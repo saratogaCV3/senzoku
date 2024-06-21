@@ -1,14 +1,11 @@
-h2, h4, label, #change, #output {
+h2, h4, label {
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
+
 #change, #output {
-    font-size: 1.6em;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 1.8em;
     font-weight: bold;
-}
-
-
-#change, #output {
-    font-size: 1.4em;
 }
 
 .radio02{
