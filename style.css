@@ -1,7 +1,7 @@
-h2, h4, label, #change, #output {
+h1, h4, label, #change, #output {
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
-h2 {
+h1 {
     font-weight: bold;
 }
 
