@@ -21,9 +21,9 @@ h2, h4, label {
 	float: left;
 	cursor: pointer;
 	width: 16%;
-        height: 0.3em;
+        height: 0.5em;
 	margin: -1em 0 0.02em 0;
-	padding: 0.35em 0 0.7em 0;
+	padding: 0.45em 0 0.9em 0;
 	border-right: 0.02em solid #d7d7d7;
 	background: #e5e5e5;
 	color: #555e64;
