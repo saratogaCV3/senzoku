@@ -1,0 +1,114 @@
+h2, h4, label, #change, #output {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+
+#change, #output {
+    font-size: 1.4em;
+}
+
+.radio02{
+	float: left;	
+	width: 100%;	
+	margin:0 0 0.3em 0;
+}
+.radio02 input{
+	display: none;
+}
+.radio02 label{
+	display: block;
+	float: left;
+	cursor: pointer;
+	width: 16%;
+    height: 0.4em;
+	margin: -1em 0 0.02em 0;
+	padding: 0.5em 0 1em 0;
+	border-right: 0.02em solid #d7d7d7;
+	background: #e5e5e5;
+	color: #555e64;
+	font-size: 120%;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1;
+	transition: .2s;
+}
+
+.radio02 label:last-of-type{
+	border-right: 0px;
+}
+.radio02 input[type="radio"]:checked + label {
+	background-color: #a1b91d;
+	color: #fff;
+}
+
+.cp_iptxt {
+	position: relative;
+	width: 100%;
+	margin: 0.7em 0.1em;
+}
+.cp_iptxt input[type='text'] {
+	font: 1.2em sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	letter-spacing: 1px;
+	padding-left: 4em;
+}
+.cp_iptxt input[type='text']:focus {
+	outline: none;
+}
+.ef {
+	padding: 0.1em 0;
+	border: 0;
+	border-bottom: 1px solid #1b2538;
+	background-color: transparent;
+}
+.ef ~ .focus_line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 0.1em;
+	transition: 0.4s;
+	background-color: #a1b91d;
+}
+.ef:focus ~ .focus_line,
+.cp_iptxt.ef ~ .focus_line {
+	width: 100%;
+	transition: 0.4s;
+}
+.ef ~ label {
+	position: absolute;
+	z-index: -1;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	transition: 0.3s;
+	letter-spacing: 0.5px;
+	color: #aaaaaa;
+}
+.ef:focus ~ label, .cp_iptxt.ef ~ label {
+	font-size: 1.2em;
+	top: -16px;
+	transition: 0.3s;
+	color: #a1b91d;
+}
+
+.border_btn01 {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%; /* ボタン幅 */
+    color: #333333; /* 文字色 */
+    border: 2px solid #a1b91d; /* 線幅・種類・色 */
+    background: #fff; /* 背景色 */
+    padding: 0.2em 0.4em;
+    font-weight: bold; /* 文字の太さ */
+	font-size: 1.5em; /* 文字サイズ */
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.border_btn01:hover {
+    color: #fff; /* 文字色 */
+    background: #a1b91d; /* 背景色 */
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>洗足計算機</title>
+</head>
+<body>
+    <h4>洗足焼き/100円</h4>
+    <div class="radio02">
+        <input type="radio" name="senzoku" value="0" checked=true id="s0"/>
+        <label for="s0">0</label>
+        <input type="radio" name="senzoku" value="100" id="s1"/>
+        <label for="s1">1</label>
+        <input type="radio" name="senzoku" value="200" id="s2"/>
+        <label for="s2">2</label>
+        <input type="radio" name="senzoku" value="300" id="s3"/>
+        <label for="s3">3</label>
+        <input type="radio" name="senzoku" value="400" id="s4"/>
+        <label for="s4">4</label>
+        <input type="radio" name="senzoku" value="500" id="s5"/>
+        <label for="s5">5</label>
+    </div>
+    <h4>いろは焼/100円</h4>
+    <div class="radio02">
+        <input type="radio" name="iroha" value="0" checked=true id="i0"/>
+        <label for="i0">0</label>
+        <input type="radio" name="iroha" value="100" id="i1"/>
+        <label for="i1">1</label>
+        <input type="radio" name="iroha" value="200" id="i2"/>
+        <label for="i2">2</label>
+        <input type="radio" name="iroha" value="300" id="i3"/>
+        <label for="i3">3</label>
+        <input type="radio" name="iroha" value="400" id="i4"/>
+        <label for="i4">4</label>
+        <input type="radio" name="iroha" value="500" id="i5"/>
+        <label for="i5">5</label>
+    </div>
+    <h4>焼きそば/200円</h4>
+    <div class="radio02">
+        <input type="radio" name="yakisoba" value="0" checked=true id="y0"/>
+        <label for="y0">0</label>
+        <input type="radio" name="yakisoba" value="200" id="y1"/>
+        <label for="y1">1</label>
+        <input type="radio" name="yakisoba" value="400" id="y2"/>
+        <label for="y2">2</label>
+        <input type="radio" name="yakisoba" value="600" id="y3"/>
+        <label for="y3">3</label>
+        <input type="radio" name="yakisoba" value="800" id="y4"/>
+        <label for="y4">4</label>
+        <input type="radio" name="yakisoba" value="1000" id="y5"/>
+        <label for="y5">5</label>
+    </div>
+    <h4>かき氷/150円</h4>
+    <div class="radio02">
+        <input type="radio" name="kakigori" value="0" checked=true id="k0"/>
+        <label for="k0">0</label>
+        <input type="radio" name="kakigori" value="150" id="k1"/>
+        <label for="k1">1</label>
+        <input type="radio" name="kakigori" value="300" id="k2"/>
+        <label for="k2">2</label>
+        <input type="radio" name="kakigori" value="450" id="k3"/>
+        <label for="k3">3</label>
+        <input type="radio" name="kakigori" value="600" id="k4"/>
+        <label for="k4">4</label>
+        <input type="radio" name="kakigori" value="750" id="k5"/>
+        <label for="k5">5</label>
+    </div>
+    <h4>カレー/200円</h4>
+    <div class="radio02">
+        <input type="radio" name="curry" value="0" checked=true id="c0"/>
+        <label for="c0">0</label>
+        <input type="radio" name="curry" value="200" id="c1"/>
+        <label for="c1">1</label>
+        <input type="radio" name="curry" value="400" id="c2"/>
+        <label for="c2">2</label>
+        <input type="radio" name="curry" value="600" id="c3"/>
+        <label for="c3">3</label>
+        <input type="radio" name="curry" value="800" id="c4"/>
+        <label for="c4">4</label>
+        <input type="radio" name="curry" value="1000" id="c5"/>
+        <label for="c5">5</label>
+    </div>
+
+    <center>
+        <p id="output">合計：￥0</p>
+    </center>
+    
+    <div class="cp_iptxt">
+        <input class="ef" type="text" id="paid" placeholder="">
+        <label>預かり</label>
+        <span class="focus_line"></span>
+    </div>
+    <button type="button" class="border_btn01" onclick="calc()">計算</button>
+    <center>
+        <p id="change">おつり：￥0</p>
+    </center>
+
+    <button type="button" class="border_btn01" onclick="location.href='main.html'">CLEAR</button>
+
+    <script>
+        const senzoku = document.getElementsByName('senzoku');
+        const iroha = document.getElementsByName('iroha');
+        const yakisoba = document.getElementsByName('yakisoba');
+        const kakigori = document.getElementsByName('kakigori');
+        const curry = document.getElementsByName('curry');
+
+        const menu = [senzoku, iroha, yakisoba, kakigori, curry];
+        let sum = 0;
+        let values = [0,0,0,0,0];
+
+        const updateSum = () => {
+            sum = 0;
+            for (let i = 0; i < values.length; i++) {
+                sum += parseInt(values[i]);
+            }
+            output.textContent = "合計：￥" + sum;
+        };
+
+        for (let i = 0; i < menu.length; i++) {
+            for (let j = 0; j < menu[i].length; j++) {
+                menu[i][j].addEventListener('change', () => {
+                    if (menu[i][j].checked) {
+                        values[i] = menu[i][j].value;
+                    }
+                    updateSum();
+                })
+            }
+        }
+        for (let i = 0; i < senzoku.length; i++) {
+            senzoku[i].addEventListener('change', () => {
+                if (senzoku[i].checked) {
+                    sum = senzoku[i].value;
+                }
+                updateSum();
+            })
+        }
+
+        const calc = () => {
+            const paid = document.getElementById('paid').value;
+            const change = paid - sum;
+            if (change < 0) {
+                document.getElementById('change').textContent = "お金が足りません";
+            } else {
+                document.getElementById('change').textContent = "おつり：￥" + change;
+            }
+        }
+
+    </script>
+</body>
+</html>
