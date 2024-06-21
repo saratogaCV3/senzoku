@@ -7,7 +7,7 @@
     <title>注文ちゃん</title>
 </head>
 <body>
-    <h4>洗足焼き/100円</h4>
+    <h4>洗足焼(ミニお好み焼) ￥100</h4>
     <div class="radio02">
         <input type="radio" name="senzoku" value="0" checked=true id="s0"/>
         <label for="s0">0</label>
@@ -22,7 +22,7 @@
         <input type="radio" name="senzoku" value="500" id="s5"/>
         <label for="s5">5</label>
     </div>
-    <h4>いろは焼/100円</h4>
+    <h4>いろは焼 ￥100</h4>
     <div class="radio02">
         <input type="radio" name="iroha" value="0" checked=true id="i0"/>
         <label for="i0">0</label>
@@ -37,7 +37,22 @@
         <input type="radio" name="iroha" value="500" id="i5"/>
         <label for="i5">5</label>
     </div>
-    <h4>焼きそば/200円</h4>
+    <h4>かき氷 ￥100</h4>
+    <div class="radio02">
+        <input type="radio" name="kakigori" value="0" checked=true id="k0"/>
+        <label for="k0">0</label>
+        <input type="radio" name="kakigori" value="100" id="k1"/>
+        <label for="k1">1</label>
+        <input type="radio" name="kakigori" value="200" id="k2"/>
+        <label for="k2">2</label>
+        <input type="radio" name="kakigori" value="300" id="k3"/>
+        <label for="k3">3</label>
+        <input type="radio" name="kakigori" value="400" id="k4"/>
+        <label for="k4">4</label>
+        <input type="radio" name="kakigori" value="500" id="k5"/>
+        <label for="k5">5</label>
+    </div>
+    <h4>ミニ焼きそば ￥200</h4>
     <div class="radio02">
         <input type="radio" name="yakisoba" value="0" checked=true id="y0"/>
         <label for="y0">0</label>
@@ -52,22 +67,7 @@
         <input type="radio" name="yakisoba" value="1000" id="y5"/>
         <label for="y5">5</label>
     </div>
-    <h4>かき氷/150円</h4>
-    <div class="radio02">
-        <input type="radio" name="kakigori" value="0" checked=true id="k0"/>
-        <label for="k0">0</label>
-        <input type="radio" name="kakigori" value="150" id="k1"/>
-        <label for="k1">1</label>
-        <input type="radio" name="kakigori" value="300" id="k2"/>
-        <label for="k2">2</label>
-        <input type="radio" name="kakigori" value="450" id="k3"/>
-        <label for="k3">3</label>
-        <input type="radio" name="kakigori" value="600" id="k4"/>
-        <label for="k4">4</label>
-        <input type="radio" name="kakigori" value="750" id="k5"/>
-        <label for="k5">5</label>
-    </div>
-    <h4>カレー/200円</h4>
+    <h4>ミニカレーライス ￥200</h4>
     <div class="radio02">
         <input type="radio" name="curry" value="0" checked=true id="c0"/>
         <label for="c0">0</label>
@@ -127,14 +127,6 @@
                     updateSum();
                 })
             }
-        }
-        for (let i = 0; i < senzoku.length; i++) {
-            senzoku[i].addEventListener('change', () => {
-                if (senzoku[i].checked) {
-                    sum = senzoku[i].value;
-                }
-                updateSum();
-            })
         }
 
         const calc = () => {
