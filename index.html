@@ -7,7 +7,7 @@
     <title>注文ちゃん</title>
 </head>
 <body>
-    <h4>洗足焼(ミニお好み焼) ￥100</h4>
+    <h4>洗足焼き(お好み焼き) ￥100</h4>
     <div class="radio02">
         <input type="radio" name="senzoku" value="0" checked=true id="s0"/>
         <label for="s0">0</label>
@@ -22,7 +22,7 @@
         <input type="radio" name="senzoku" value="500" id="s5"/>
         <label for="s5">5</label>
     </div>
-    <h4>いろは焼 ￥100</h4>
+    <h4>いろは焼き(あんこ&パンケーキ) ￥100</h4>
     <div class="radio02">
         <input type="radio" name="iroha" value="0" checked=true id="i0"/>
         <label for="i0">0</label>
@@ -52,7 +52,22 @@
         <input type="radio" name="kakigori" value="500" id="k5"/>
         <label for="k5">5</label>
     </div>
-    <h4>ミニ焼きそば ￥200</h4>
+    <h4>ドリンク ￥100</h4>
+    <div class="radio02">
+        <input type="radio" name="drink" value="0" checked=true id="k0"/>
+        <label for="d0">0</label>
+        <input type="radio" name="kakigori" value="100" id="d1"/>
+        <label for="d1">1</label>
+        <input type="radio" name="kakigori" value="200" id="d2"/>
+        <label for="d2">2</label>
+        <input type="radio" name="kakigori" value="300" id="d3"/>
+        <label for="d3">3</label>
+        <input type="radio" name="kakigori" value="400" id="d4"/>
+        <label for="d4">4</label>
+        <input type="radio" name="kakigori" value="500" id="d5"/>
+        <label for="d5">5</label>
+    </div>
+    <h4>焼きそば ￥200</h4>
     <div class="radio02">
         <input type="radio" name="yakisoba" value="0" checked=true id="y0"/>
         <label for="y0">0</label>
@@ -86,16 +101,6 @@
     <center>
         <p id="output">合計：￥0</p>
     </center>
-    
-<!--     <div class="cp_iptxt">
-        <input class="ef" type="text" id="paid" placeholder="">
-        <label>預かり</label>
-        <span class="focus_line"></span>
-    </div>
-    <button type="button" class="border_btn01" onclick="calc()">計算</button>
-    <center>
-        <p id="change">おつり：￥0</p>
-    </center> -->
 
     <button type="button" class="border_btn01" onclick="location.href='index.html'">CLEAR</button>
 
@@ -105,10 +110,11 @@
         const yakisoba = document.getElementsByName('yakisoba');
         const kakigori = document.getElementsByName('kakigori');
         const curry = document.getElementsByName('curry');
+        const drink = document.getElementsByName('drink');
 
-        const menu = [senzoku, iroha, yakisoba, kakigori, curry];
+        const menu = [senzoku, iroha, yakisoba, kakigori, curry, drink];
         let sum = 0;
-        let values = [0,0,0,0,0];
+        let values = [0,0,0,0,0,0];
 
         const updateSum = () => {
             sum = 0;
