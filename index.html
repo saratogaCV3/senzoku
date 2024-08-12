@@ -97,6 +97,17 @@
         <input type="radio" name="curry" value="1000" id="c5"/>
         <label for="c5">5</label>
     </div>
+    <h4>パスタ&レモンケーキ ￥500</h4>
+    <div class="radio02">
+        <input type="radio" name="pasta" value="0" checked=true id="p0"/>
+        <label for="p0">0</label>
+        <input type="radio" name="pasta" value="500" id="p1"/>
+        <label for="p1">1</label>
+        <input type="radio" name="pasta" value="1000" id="p2"/>
+        <label for="p2">2</label>
+        <input type="radio" name="pasta" value="1500" id="p3"/>
+        <label for="p3">3</label>
+    </div>
 
     <center>
         <p id="output">合計：￥0</p>
@@ -111,10 +122,11 @@
         const kakigori = document.getElementsByName('kakigori');
         const curry = document.getElementsByName('curry');
         const drink = document.getElementsByName('drink');
+        const pasta = document.getElementsByName('pasta');
 
-        const menu = [senzoku, iroha, yakisoba, kakigori, curry, drink];
+        const menu = [senzoku, iroha, yakisoba, kakigori, curry, drink, pasta];
         let sum = 0;
-        let values = [0,0,0,0,0,0];
+        let values = [0,0,0,0,0,0,0];
 
         const updateSum = () => {
             sum = 0;
