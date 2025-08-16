@@ -13,8 +13,10 @@ h2, h4, label {
     margin: 0.5vh 0;
 }
 
-h4 {
-    text-align: right; /* メニュー料金を右寄せ */
+.menu-item-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #output {
