@@ -10,7 +10,9 @@
     <div class="main-container">
         <div class="top-section">
             <p id="output">合計：￥0</p>
-            <button type="button" class="border_btn01" onclick="location.href='index.html'">CLEAR</button>
+            <div style="text-align: right; flex-grow: 1;">
+                <button type="button" class="border_btn01" onclick="location.href='index.html'">CLEAR</button>
+            </div>
         </div>
         <div class="menu-container">
             <h4>①洗足焼き(お好み焼き) ￥100</h4>
@@ -134,17 +136,8 @@
                 <label for="ca5">5</label>
             </div>
         </div>
-        <div class="bottom-section">
-            <div class="cp_iptxt ef">
-                <input type='text' id="paid" placeholder="">
-                <label for="paid">支払い金額</label>
-                <span class="focus_line"></span>
-            </div>
-            <p id="change">おつり：￥0</p>
-            <button type="button" class="border_btn01" onclick="calc()">CALC</button>
-        </div>
     </div>
-
+    
     <script>
         const senzoku = document.getElementsByName('senzoku');
         const iroha = document.getElementsByName('iroha');
@@ -176,16 +169,6 @@
                     }
                     updateSum();
                 })
-            }
-        }
-
-        const calc = () => {
-            const paid = document.getElementById('paid').value;
-            const change = paid - sum;
-            if (change < 0) {
-                document.getElementById('change').textContent = "お金が足りません";
-            } else {
-                document.getElementById('change').textContent = "おつり：￥" + change;
             }
         }
     </script>
