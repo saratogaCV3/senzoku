@@ -10,7 +10,7 @@ h2, h4, label {
 
 .radio02{
 	float: left;	
-	width: 100%;	
+	width: 100%;
 	margin:0 0 0.3em 0;
 }
 .radio02 input{
@@ -21,6 +21,9 @@ h2, h4, label {
 	float: left;
 	cursor: pointer;
 	width: 16%;
+	display: flex; /* これを追加 */
+    justify-content: center; /* これを追加 */
+    align-items: center; /* これを追加 */
     height: 2em;
 	margin: -1em 0 0.02em 0;
 	padding: 0.5em 0 1em 0;
