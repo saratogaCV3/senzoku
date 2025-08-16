@@ -24,7 +24,7 @@ h2, h4, label {
 	display: flex; /* これを追加 */
     justify-content: center; /* これを追加 */
     align-items: center; /* これを追加 */
-    height: 2em;
+    height: 4vh;
 	margin: -1em 0 0.02em 0;
 	padding: 0.5em 0 1em 0;
 	border-right: 0.02em solid #d7d7d7;
