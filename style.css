@@ -13,7 +13,7 @@ body {
 .main-container {
     width: 90%;
     max-width: 600px;
-    height: 95%;
+    height: 100vh; /* 変更点: 画面の高さいっぱいに表示 */
     display: flex;
     flex-direction: column;
     padding: 2vh 5vw;
@@ -67,7 +67,7 @@ body {
 
 .menu-container {
     flex-grow: 1;
-    overflow-y: auto;
+    overflow-y: auto; /* 変更点: メニュー項目が収まらない場合にスクロール可能に */
     padding-top: 2vh;
 }
 
