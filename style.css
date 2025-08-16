@@ -17,14 +17,13 @@ h2, h4, label {
 	display: none;
 }
 .radio02 label{
-	display: block;
 	float: left;
 	cursor: pointer;
 	width: 16%;
 	display: flex; /* これを追加 */
     justify-content: center; /* これを追加 */
     align-items: center; /* これを追加 */
-    height: 3.5em; /* 高さを指定 */
+    height: 10vh; /* 高さを指定 */
 	margin: -1em 0 0.02em 0;
 	padding: 0.5em 0 1em 0;
 	border-right: 0.02em solid #d7d7d7;
