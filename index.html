@@ -7,133 +7,144 @@
     <title>注文ちゃん</title>
 </head>
 <body>
-    <div style="display: flex; align-items: center; gap: 10px;">
-        <p id="output" style="white-space: nowrap;">合計：￥0</p>
-        <button type="button" class="border_btn01" onclick="location.href='index.html'">CLEAR</button>
-    </div>
-    <h4>①洗足焼き(お好み焼き) ￥100</h4>
-    <div class="radio02">
-        <input type="radio" name="senzoku" value="0" checked=true id="s0"/>
-        <label for="s0">0</label>
-        <input type="radio" name="senzoku" value="100" id="s1"/>
-        <label for="s1">1</label>
-        <input type="radio" name="senzoku" value="200" id="s2"/>
-        <label for="s2">2</label>
-        <input type="radio" name="senzoku" value="300" id="s3"/>
-        <label for="s3">3</label>
-        <input type="radio" name="senzoku" value="400" id="s4"/>
-        <label for="s4">4</label>
-        <input type="radio" name="senzoku" value="500" id="s5"/>
-        <label for="s5">5</label>
-    </div>
-    <h4>②焼きそば ￥200</h4>
-    <div class="radio02">
-        <input type="radio" name="yakisoba" value="0" checked=true id="y0"/>
-        <label for="y0">0</label>
-        <input type="radio" name="yakisoba" value="200" id="y1"/>
-        <label for="y1">1</label>
-        <input type="radio" name="yakisoba" value="400" id="y2"/>
-        <label for="y2">2</label>
-        <input type="radio" name="yakisoba" value="600" id="y3"/>
-        <label for="y3">3</label>
-        <input type="radio" name="yakisoba" value="800" id="y4"/>
-        <label for="y4">4</label>
-        <input type="radio" name="yakisoba" value="1000" id="y5"/>
-        <label for="y5">5</label>
-    </div>
-    <h4>③カレーライス ￥200</h4>
-    <div class="radio02">
-        <input type="radio" name="curry" value="0" checked=true id="c0"/>
-        <label for="c0">0</label>
-        <input type="radio" name="curry" value="200" id="c1"/>
-        <label for="c1">1</label>
-        <input type="radio" name="curry" value="400" id="c2"/>
-        <label for="c2">2</label>
-        <input type="radio" name="curry" value="600" id="c3"/>
-        <label for="c3">3</label>
-        <input type="radio" name="curry" value="800" id="c4"/>
-        <label for="c4">4</label>
-        <input type="radio" name="curry" value="1000" id="c5"/>
-        <label for="c5">5</label>
-    </div>
-    <h4>④いろは焼き(あんこ&パンケーキ) ￥100</h4>
-    <div class="radio02">
-        <input type="radio" name="iroha" value="0" checked=true id="i0"/>
-        <label for="i0">0</label>
-        <input type="radio" name="iroha" value="100" id="i1"/>
-        <label for="i1">1</label>
-        <input type="radio" name="iroha" value="200" id="i2"/>
-        <label for="i2">2</label>
-        <input type="radio" name="iroha" value="300" id="i3"/>
-        <label for="i3">3</label>
-        <input type="radio" name="iroha" value="400" id="i4"/>
-        <label for="i4">4</label>
-        <input type="radio" name="iroha" value="500" id="i5"/>
-        <label for="i5">5</label>
-    </div>
-    <h4>⑤かき氷 ￥100</h4>
-    <div class="radio02">
-        <input type="radio" name="kakigori" value="0" checked=true id="k0"/>
-        <label for="k0">0</label>
-        <input type="radio" name="kakigori" value="100" id="k1"/>
-        <label for="k1">1</label>
-        <input type="radio" name="kakigori" value="200" id="k2"/>
-        <label for="k2">2</label>
-        <input type="radio" name="kakigori" value="300" id="k3"/>
-        <label for="k3">3</label>
-        <input type="radio" name="kakigori" value="400" id="k4"/>
-        <label for="k4">4</label>
-        <input type="radio" name="kakigori" value="500" id="k5"/>
-        <label for="k5">5</label>
-    </div>
-    <h4>⑥ドリンク ￥100</h4>
-    <div class="radio02">
-        <input type="radio" name="drink" value="0" checked=true id="d0"/>
-        <label for="d0">0</label>
-        <input type="radio" name="drink" value="100" id="d1"/>
-        <label for="d1">1</label>
-        <input type="radio" name="drink" value="200" id="d2"/>
-        <label for="d2">2</label>
-        <input type="radio" name="drink" value="300" id="d3"/>
-        <label for="d3">3</label>
-        <input type="radio" name="drink" value="400" id="d4"/>
-        <label for="d4">4</label>
-        <input type="radio" name="drink" value="500" id="d5"/>
-        <label for="d5">5</label>
-    </div>
-    <h4>⑦⑧パスタセット ￥600</h4>
-    <div class="radio02">
-        <input type="radio" name="pasta" value="0" checked=true id="p0"/>
-        <label for="p0">0</label>
-        <input type="radio" name="pasta" value="600" id="p1"/>
-        <label for="p1">1</label>
-        <input type="radio" name="pasta" value="1200" id="p2"/>
-        <label for="p2">2</label>
-        <input type="radio" name="pasta" value="1800" id="p3"/>
-        <label for="p3">3</label>
-        <input type="radio" name="pasta" value="2400" id="p4"/>
-        <label for="p4">4</label>
-        <input type="radio" name="pasta" value="3000" id="p5"/>
-        <label for="p5">5</label>
-    </div>
-    <h4>⑨ケーキセット ￥200</h4>
-    <div class="radio02">
-        <input type="radio" name="cake" value="0" checked=true id="ca0"/>
-        <label for="ca0">0</label>
-        <input type="radio" name="cake" value="200" id="ca1"/>
-        <label for="ca1">1</label>
-        <input type="radio" name="cake" value="400" id="ca2"/>
-        <label for="ca2">2</label>
-        <input type="radio" name="cake" value="600" id="ca3"/>
-        <label for="ca3">3</label>
-        <input type="radio" name="cake" value="800" id="ca4"/>
-        <label for="ca4">4</label>
-        <input type="radio" name="cake" value="1000" id="ca5"/>
-        <label for="ca5">5</label>
+    <div class="main-container">
+        <div class="top-section">
+            <p id="output">合計：￥0</p>
+            <button type="button" class="border_btn01" onclick="location.href='index.html'">CLEAR</button>
+        </div>
+        <div class="menu-container">
+            <h4>①洗足焼き(お好み焼き) ￥100</h4>
+            <div class="radio02">
+                <input type="radio" name="senzoku" value="0" checked id="s0"/>
+                <label for="s0">0</label>
+                <input type="radio" name="senzoku" value="100" id="s1"/>
+                <label for="s1">1</label>
+                <input type="radio" name="senzoku" value="200" id="s2"/>
+                <label for="s2">2</label>
+                <input type="radio" name="senzoku" value="300" id="s3"/>
+                <label for="s3">3</label>
+                <input type="radio" name="senzoku" value="400" id="s4"/>
+                <label for="s4">4</label>
+                <input type="radio" name="senzoku" value="500" id="s5"/>
+                <label for="s5">5</label>
+            </div>
+            <h4>②焼きそば ￥200</h4>
+            <div class="radio02">
+                <input type="radio" name="yakisoba" value="0" checked id="y0"/>
+                <label for="y0">0</label>
+                <input type="radio" name="yakisoba" value="200" id="y1"/>
+                <label for="y1">1</label>
+                <input type="radio" name="yakisoba" value="400" id="y2"/>
+                <label for="y2">2</label>
+                <input type="radio" name="yakisoba" value="600" id="y3"/>
+                <label for="y3">3</label>
+                <input type="radio" name="yakisoba" value="800" id="y4"/>
+                <label for="y4">4</label>
+                <input type="radio" name="yakisoba" value="1000" id="y5"/>
+                <label for="y5">5</label>
+            </div>
+            <h4>③カレーライス ￥200</h4>
+            <div class="radio02">
+                <input type="radio" name="curry" value="0" checked id="c0"/>
+                <label for="c0">0</label>
+                <input type="radio" name="curry" value="200" id="c1"/>
+                <label for="c1">1</label>
+                <input type="radio" name="curry" value="400" id="c2"/>
+                <label for="c2">2</label>
+                <input type="radio" name="curry" value="600" id="c3"/>
+                <label for="c3">3</label>
+                <input type="radio" name="curry" value="800" id="c4"/>
+                <label for="c4">4</label>
+                <input type="radio" name="curry" value="1000" id="c5"/>
+                <label for="c5">5</label>
+            </div>
+            <h4>④いろは焼き(あんこ&パンケーキ) ￥100</h4>
+            <div class="radio02">
+                <input type="radio" name="iroha" value="0" checked id="i0"/>
+                <label for="i0">0</label>
+                <input type="radio" name="iroha" value="100" id="i1"/>
+                <label for="i1">1</label>
+                <input type="radio" name="iroha" value="200" id="i2"/>
+                <label for="i2">2</label>
+                <input type="radio" name="iroha" value="300" id="i3"/>
+                <label for="i3">3</label>
+                <input type="radio" name="iroha" value="400" id="i4"/>
+                <label for="i4">4</label>
+                <input type="radio" name="iroha" value="500" id="i5"/>
+                <label for="i5">5</label>
+            </div>
+            <h4>⑤かき氷 ￥100</h4>
+            <div class="radio02">
+                <input type="radio" name="kakigori" value="0" checked id="k0"/>
+                <label for="k0">0</label>
+                <input type="radio" name="kakigori" value="100" id="k1"/>
+                <label for="k1">1</label>
+                <input type="radio" name="kakigori" value="200" id="k2"/>
+                <label for="k2">2</label>
+                <input type="radio" name="kakigori" value="300" id="k3"/>
+                <label for="k3">3</label>
+                <input type="radio" name="kakigori" value="400" id="k4"/>
+                <label for="k4">4</label>
+                <input type="radio" name="kakigori" value="500" id="k5"/>
+                <label for="k5">5</label>
+            </div>
+            <h4>⑥ドリンク ￥100</h4>
+            <div class="radio02">
+                <input type="radio" name="drink" value="0" checked id="d0"/>
+                <label for="d0">0</label>
+                <input type="radio" name="drink" value="100" id="d1"/>
+                <label for="d1">1</label>
+                <input type="radio" name="drink" value="200" id="d2"/>
+                <label for="d2">2</label>
+                <input type="radio" name="drink" value="300" id="d3"/>
+                <label for="d3">3</label>
+                <input type="radio" name="drink" value="400" id="d4"/>
+                <label for="d4">4</label>
+                <input type="radio" name="drink" value="500" id="d5"/>
+                <label for="d5">5</label>
+            </div>
+            <h4>⑦⑧パスタセット ￥600</h4>
+            <div class="radio02">
+                <input type="radio" name="pasta" value="0" checked id="p0"/>
+                <label for="p0">0</label>
+                <input type="radio" name="pasta" value="600" id="p1"/>
+                <label for="p1">1</label>
+                <input type="radio" name="pasta" value="1200" id="p2"/>
+                <label for="p2">2</label>
+                <input type="radio" name="pasta" value="1800" id="p3"/>
+                <label for="p3">3</label>
+                <input type="radio" name="pasta" value="2400" id="p4"/>
+                <label for="p4">4</label>
+                <input type="radio" name="pasta" value="3000" id="p5"/>
+                <label for="p5">5</label>
+            </div>
+            <h4>⑨ケーキセット ￥200</h4>
+            <div class="radio02">
+                <input type="radio" name="cake" value="0" checked id="ca0"/>
+                <label for="ca0">0</label>
+                <input type="radio" name="cake" value="200" id="ca1"/>
+                <label for="ca1">1</label>
+                <input type="radio" name="cake" value="400" id="ca2"/>
+                <label for="ca2">2</label>
+                <input type="radio" name="cake" value="600" id="ca3"/>
+                <label for="ca3">3</label>
+                <input type="radio" name="cake" value="800" id="ca4"/>
+                <label for="ca4">4</label>
+                <input type="radio" name="cake" value="1000" id="ca5"/>
+                <label for="ca5">5</label>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <div class="cp_iptxt ef">
+                <input type='text' id="paid" placeholder="">
+                <label for="paid">支払い金額</label>
+                <span class="focus_line"></span>
+            </div>
+            <p id="change">おつり：￥0</p>
+            <button type="button" class="border_btn01" onclick="calc()">CALC</button>
+        </div>
     </div>
 
-
-    
     <script>
         const senzoku = document.getElementsByName('senzoku');
         const iroha = document.getElementsByName('iroha');
@@ -147,6 +158,7 @@
         const menu = [senzoku, iroha, yakisoba, kakigori, curry, drink, pasta, cake];
         let sum = 0;
         let values = [0,0,0,0,0,0,0,0];
+        const output = document.getElementById('output');
 
         const updateSum = () => {
             sum = 0;
@@ -176,7 +188,6 @@
                 document.getElementById('change').textContent = "おつり：￥" + change;
             }
         }
-
     </script>
 </body>
 </html>
