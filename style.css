@@ -9,7 +9,8 @@ h2, h4, label {
 }
 
 .radio02{
-	float: left;	
+	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	margin:0 0 0.3em 0;
 }
@@ -17,15 +18,13 @@ h2, h4, label {
 	display: none;
 }
 .radio02 label{
-	float: left;
 	cursor: pointer;
 	width: 16%;
-	display: flex; /* これを追加 */
-    justify-content: center; /* これを追加 */
-    align-items: center; /* これを追加 */
-    height: 10vh; /* 高さを指定 */
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
 	margin: -1em 0 0.02em 0;
-	padding: 0.5em 0 1em 0;
 	border-right: 0.02em solid #d7d7d7;
 	background: #e5e5e5;
 	color: #555e64;
