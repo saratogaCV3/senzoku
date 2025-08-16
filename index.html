@@ -7,6 +7,10 @@
     <title>注文ちゃん</title>
 </head>
 <body>
+    <center>
+        <p id="output">合計：￥0</p>
+    </center>
+    <button type="button" class="border_btn01" onclick="location.href='index.html'">CLEAR</button>
     <h4>①洗足焼き(お好み焼き) ￥100</h4>
     <div class="radio02">
         <input type="radio" name="senzoku" value="0" checked=true id="s0"/>
@@ -97,24 +101,35 @@
         <input type="radio" name="drink" value="500" id="d5"/>
         <label for="d5">5</label>
     </div>
-    <h4>⑦まりもセット ￥500</h4>
+    <h4>⑦⑧パスタセット ￥600</h4>
     <div class="radio02">
         <input type="radio" name="pasta" value="0" checked=true id="p0"/>
         <label for="p0">0</label>
-        <input type="radio" name="pasta" value="500" id="p1"/>
+        <input type="radio" name="pasta" value="600" id="p1"/>
         <label for="p1">1</label>
-        <input type="radio" name="pasta" value="1000" id="p2"/>
+        <input type="radio" name="pasta" value="1200" id="p2"/>
         <label for="p2">2</label>
-        <input type="radio" name="pasta" value="1500" id="p3"/>
+        <input type="radio" name="pasta" value="1800" id="p3"/>
+        <label for="p3">3</label>
+    </div>
+    <h4>⑨ケーキセット ￥200</h4>
+    <div class="radio02">
+        <input type="radio" name="cake" value="0" checked=true id="c0"/>
+        <label for="p0">0</label>
+        <input type="radio" name="cake" value="200" id="c1"/>
+        <label for="p1">1</label>
+        <input type="radio" name="cake" value="400" id="c2"/>
+        <label for="p2">2</label>
+        <input type="radio" name="cake" value="600" id="c3"/>
+        <label for="p3">3</label>
+        <input type="radio" name="cake" value="800" id="c4"/>
+        <label for="p3">3</label>
+        <input type="radio" name="cake" value="1000" id="c5"/>
         <label for="p3">3</label>
     </div>
 
-    <center>
-        <p id="output">合計：￥0</p>
-    </center>
 
-    <button type="button" class="border_btn01" onclick="location.href='index.html'">CLEAR</button>
-
+    
     <script>
         const senzoku = document.getElementsByName('senzoku');
         const iroha = document.getElementsByName('iroha');
