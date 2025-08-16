@@ -13,7 +13,7 @@ body {
 .main-container {
     width: 90%;
     max-width: 600px;
-    height: 100vh; /* 変更点: 画面の高さいっぱいに表示 */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 2vh 5vw;
@@ -43,7 +43,7 @@ body {
     border: none;
     border-radius: 8px;
     font-weight: bold;
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -67,7 +67,7 @@ body {
 
 .menu-container {
     flex-grow: 1;
-    overflow-y: auto; /* 変更点: メニュー項目が収まらない場合にスクロール可能に */
+    overflow-y: auto;
     padding-top: 2vh;
 }
 
@@ -78,7 +78,7 @@ body {
 .menu-item-name {
     display: flex;
     justify-content: space-between;
-    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.2rem);
     font-weight: 700;
     margin-bottom: 1vh;
 }
@@ -86,6 +86,7 @@ body {
 .price {
     font-weight: 400;
     color: #666;
+    font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 .radio02{
@@ -102,10 +103,10 @@ body {
     justify-content: center;
     align-items: center;
 	box-sizing: border-box;
-    height: 5vh;
+    height: 4vh;
 	background: #eee;
 	color: #555e64;
-	font-size: clamp(1rem, 2vw, 1.2rem);
+	font-size: clamp(0.8rem, 1.5vw, 1rem);
 	font-weight: bold;
 	text-align: center;
 	line-height: 1;
