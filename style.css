@@ -39,7 +39,7 @@ body {
 }
 
 .btn {
-    padding: 1vh;
+    padding: 1vh 2vw;
     border: none;
     border-radius: 8px;
     font-weight: bold;
@@ -55,10 +55,13 @@ body {
 }
 
 .clear-btn {
-    width: clamp(60px, 12vw, 180px);
+    width: clamp(100px, 20vw, 180px); /* CLEARボタンの幅を拡大 */
     background-color: #e8f5e9;
     color: #6a8e3d;
     border: 2px solid #6a8e3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .clear-btn:hover {
@@ -93,7 +96,7 @@ body {
 .radio02{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 0.3vh; /* 変更点: ラジオボタン間の余白を縮小 */
+    gap: 0.3vh; /* ラジオボタン間の余白を縮小 */
 }
 .radio02 input{
 	display: none;
@@ -104,7 +107,7 @@ body {
     justify-content: center;
     align-items: center;
 	box-sizing: border-box;
-    height: 4vh; /* 変更点: ラジオボタンの縦の大きさを縮小 */
+    height: 4vh;
 	background: #eee;
 	color: #555e64;
 	font-size: clamp(0.8rem, 1.5vw, 1rem);
