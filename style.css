@@ -55,7 +55,7 @@ body {
 }
 
 .clear-btn {
-    width: clamp(100px, 20vw, 180px); /* 変更点: CLEARボタンの幅を拡大 */
+    width: clamp(60px, 12vw, 180px); /* 変更点: CLEARボタンの幅を拡大 */
     background-color: #e8f5e9;
     color: #6a8e3d;
     border: 2px solid #6a8e3d;
