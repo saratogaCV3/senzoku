@@ -39,7 +39,7 @@ body {
 }
 
 .btn {
-    padding: 1vh 3vw 1vh 3vw;
+    padding: 1vh;
     border: none;
     border-radius: 8px;
     font-weight: bold;
